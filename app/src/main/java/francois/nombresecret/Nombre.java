@@ -33,9 +33,14 @@ public class Nombre {
         else return "nombre user < secret";
     }
 
+
+    // GETTER
+
     public int getNombre() {
         return nombre;
     }
+
+    // SETTER
 
     public void setNombre(int nombre) {
         this.nombre = nombre;

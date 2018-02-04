@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="francois.nombresecret.MainActivity">
+    tools:context="francois.nombresecret.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <Button
         android:id="@+id/idJouer"
@@ -45,9 +46,9 @@
 
     <EditText
         android:id="@+id/idNom"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="18dp"
+        android:layout_marginEnd="15dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="16dp"
         android:ems="10"
@@ -74,9 +75,9 @@
 
     <EditText
         android:id="@+id/idLimite1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="18dp"
+        android:layout_marginEnd="15dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="7dp"
         android:ems="10"
@@ -90,36 +91,38 @@
         android:id="@+id/idLimite2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="21dp"
+        android:layout_marginBottom="20dp"
         android:layout_marginEnd="4dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Limite 2"
-        app:layout_constraintBottom_toTopOf="@+id/idTentatives"
+        app:layout_constraintBottom_toTopOf="@+id/idSecret"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/idLimite1"
         app:layout_constraintTop_toBottomOf="@+id/idPrenom" />
 
     <TextView
         android:id="@+id/idTentatives"
-        android:layout_width="140dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="16dp"
         android:text="Tentatives"
-        app:layout_constraintBottom_toTopOf="@+id/idSecret"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/idSecret"
+        app:layout_constraintEnd_toStartOf="@+id/idSecret"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idLimite2" />
+        app:layout_constraintTop_toTopOf="@+id/idSecret" />
 
     <TextView
         android:id="@+id/idSecret"
-        android:layout_width="147dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="166dp"
+        android:layout_marginEnd="16dp"
         android:text="Secret"
         app:layout_constraintBottom_toTopOf="@+id/idJouer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idTentatives" />
+        app:layout_constraintStart_toEndOf="@+id/idTentatives"
+        app:layout_constraintTop_toBottomOf="@+id/idLimite2" />
 
 </android.support.constraint.ConstraintLayout>

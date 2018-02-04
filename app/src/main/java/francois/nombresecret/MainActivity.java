@@ -57,13 +57,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
 
                 break;
+
+
             case R.id.idGenerer :
+
                 try{
                     this.limite1 = Integer.parseInt(this.txtLimite1.getText().toString());
                     this.limite2 = Integer.parseInt(this.txtLimite2.getText().toString());
                 }catch(NumberFormatException exp){
                     Toast.makeText(this, "Attention aux limites", Toast.LENGTH_LONG).show();
             }
+
             this.leNombre.generer(limite1, limite2);
 
 
